@@ -1,7 +1,6 @@
 'use strict';
 
 var _       = require('lodash');
-var request = require('request');
 var args    = require('command-line-args');
 var options = require('./lib/options');
 var report  = require('./lib/report');
@@ -9,7 +8,7 @@ var config  = require('./lib/config');
 var daemon  = require('./lib/daemon');
 
 // get args
-const command = args(options.options);
+var command = args(options.options);
 
 // validate args
 var validate = options.validate(command);
@@ -34,7 +33,7 @@ if (!_.isNull(validate.error)) {
       // log error
       report.error(error);
     } else {
-        console.log(error);
+      console.log(error);
     }
   });
-};
+}

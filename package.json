@@ -1,12 +1,15 @@
 {
   "name": "yocto-load-user-scenario",
   "version": "1.0.0",
-  "description": "A tool to provide load testing from HAR captured senario",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A tool to provide user load testing tool from HAR content captured with chrome",
+  "author": {
+    "name": "ROBERT Mathieu",
+    "email": "mathieu@yocto.re",
+    "url": "http://www.yocto.re"
   },
-  "author": "Mathieu ROBERT <mathieu@yocto.re>",
+  "scripts": {
+    "help": "node app -h"
+  },
   "license": "ISC",
   "dependencies": {
     "async": "^2.0.0",
@@ -24,7 +27,32 @@
     "q": "^1.4.1",
     "request": "^2.73.0",
     "sleep": "^3.0.1",
+    "uuid": "^2.0.2",
     "yocto-daemon": "^1.2.0",
+    "yocto-logger": "^1.1.6",
     "yocto-utils": "^1.2.8"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yoctore/yocto-load-user-scenario.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yoctore/yocto-load-user-scenario/issues"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=4.4.7"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "yocto-hint": "^1.3.7"
+  },
+  "keywords": [
+    "load",
+    "test",
+    "tool",
+    "user",
+    "scenario"
+  ]
 }
