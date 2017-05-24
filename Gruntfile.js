@@ -10,7 +10,7 @@ module.exports = function (grunt) {
     yoctohint : {
       options  : {},
       all      : [
-        'src/***',
+        'lib/***',
         'Gruntfile.js'
       ]
     }
